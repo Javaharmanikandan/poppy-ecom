@@ -3,7 +3,7 @@ const mysql = require("mysql");
 
 //TODO: DATABASE CREDENTIAL
 const dbconnect = mysql.createConnection({
-    port: "3306",
+   
     host: "217.21.90.16",
     user: "u586670680_poppy_ecom",
     password: "Poppy@123",
