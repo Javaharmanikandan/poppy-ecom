@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-require("dotenv").config(); //TODO USE ENVIRONMENT VARIABLE
+// require("dotenv").config(); //TODO USE ENVIRONMENT VARIABLE
 
 //TODO: DATABASE CREDENTIAL
 const dbconnect = mysql.createConnection({
