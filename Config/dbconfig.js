@@ -4,6 +4,7 @@ const mysql = require('mysql');
 //TODO: DATABASE CREDENTIAL
 const dbconnect = mysql.createConnection({
    
+   port:"3306",
    host:"68.178.145.117",
    user:"poppy_ecom" ,
    password: "poppy_ecom",
