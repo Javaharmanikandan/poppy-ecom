@@ -38,4 +38,4 @@ function handleDisconnect() {
 }
 
 handleDisconnect();
-module.exports = dbconnect;
+module.exports = connection;
