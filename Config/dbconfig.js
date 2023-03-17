@@ -15,6 +15,7 @@ const dbconnect = mysql.createConnection({
     user:"u586670680_poppy_ecom" ,
     password: "Poppy@123",
     database: "u586670680_poppy_ecom",
+    port: 3306,
   });
 
 //TODO: DATABA CONNECTION
