@@ -7,7 +7,7 @@ const sql = require("./Config/dbconfig");
 
 const date_get = require("./Helper/common.js");
 const app = express();
-const port = process.env.port || 4001
+const port = process.env.PORT || 80
 
 const nodemailer = require("nodemailer");
 //IMPORT ROUTESn
@@ -18,9 +18,6 @@ const userRouts = require('./Routes/user');
 //MIDDLEWARE
 app.use(cors());
 
-app.options("*", cors({ origin: 'http://localhost:3000', optionsSuccessStatus: 200 }));
-
-app.use(cors({ origin: "http://localhost:3000", optionsSuccessStatus: 200 }));
 
 app.use(bodyparser.json());
 
@@ -29,7 +26,10 @@ app.use(fileUpload());
 
 app.use('/user', userRouts);
 
-
+app.get('/api', (req, res) => {
+	res.send("Working")
+	
+}
 app.get('/', (req, res) => {
 
 
