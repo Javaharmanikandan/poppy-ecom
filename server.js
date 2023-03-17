@@ -26,10 +26,7 @@ app.use(fileUpload());
 
 app.use('/user', userRouts);
 
-app.get('/api', (req, res) => {
-	res.send("Working")
-	
-});
+
 app.get('/', (req, res) => {
 
 
